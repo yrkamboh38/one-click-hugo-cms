@@ -9,6 +9,10 @@ export default {
         loader: "file-loader?name=/[hash].[ext]"
       },
       {
+        test: /\.html$/,
+        loader: "raw-loader",
+      },
+      {
         loader: "babel-loader",
         test: /\.js?$/,
         exclude: /node_modules/,
