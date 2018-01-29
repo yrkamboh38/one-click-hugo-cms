@@ -4506,8 +4506,9 @@ negotiator@0.6.1:
   optionalDependencies:
     fsevents "^1.0.14"
 
-"netlify-cms@file:../../netlify/netlify-cms/":
+"netlify-cms@https://github.com/netlify/netlify-cms#api-register-preview-template":
   version "1.1.0"
+  resolved "https://github.com/netlify/netlify-cms#86b92ec15ed7b5447a68d2904d4e5696654436f5"
   dependencies:
     classnames "^2.2.5"
     create-react-class "^15.6.0"
