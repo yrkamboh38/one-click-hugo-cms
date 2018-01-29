@@ -78,6 +78,8 @@ gulp.task("server", ["hugo", "css", "cms-assets", "js", "svg"], () => {
       baseDir: "./dist"
     }
   });
+  gulp.watch('./node_modules/netlify-cms/dist/cms.js', { interval: 1000 }, ['cms-assets', 'js']);
+  gulp.watch('./node_modules/netlify-cms/dist/cms.css', { interval: 1000 }, ['cms-assets', 'css']);
   gulp.watch("./src/js/**/*.js", ["js"]);
   gulp.watch("./src/css/**/*.css", ["css"]);
   gulp.watch("./site/static/img/icons-*.svg", ["svg"]);
